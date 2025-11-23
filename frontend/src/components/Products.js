@@ -7,7 +7,7 @@ const Products = () => {
 
   useEffect(() => {
     axios
-      .get("http://127.0.0.1:8081/api/products/") // Django API
+      .get("http://127.0.0.1:8000/api/products/") // Django API
       .then((res) => {
         console.log("Products fetched:", res.data);
         setProducts(res.data);
@@ -37,7 +37,7 @@ const Products = () => {
           >
             {product.image ? (
               <img
-                src={`http://127.0.0.1:8081${product.image}`}
+                src={`http://127.0.0.1:8000${product.image}`}
                 alt={product.name}
                 style={{ width: "100%" }}
               />
