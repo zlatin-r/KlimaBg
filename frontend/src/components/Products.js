@@ -37,7 +37,7 @@ const Products = () => {
           >
             {product.image ? (
               <img
-                src={`http://127.0.0.1:8000${product.image}`}
+                src={product.image}
                 alt={product.name}
                 style={{ width: "100%" }}
               />
