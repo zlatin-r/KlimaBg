@@ -5,11 +5,63 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d3bbf03d-821c-4f49-ac67-1597cc9ac017" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/pages/Home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/klimabg/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/klimabg/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/accounts/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/accounts/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/accounts/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/accounts/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/accounts/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/accounts/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/accounts/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/klimabg/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/klimabg/asgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/klimabg/settings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/klimabg/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/klimabg/wsgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/manage.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/media/products/Emura.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/media/products/Ururu_Sarara.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/orders/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/orders/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/orders/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/orders/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/orders/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/orders/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/orders/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/products/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/products/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/products/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/products/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/products/migrations/0002_rename_btu_product_btu_cooling_and_more.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/products/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/products/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/products/serializers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/products/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/products/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/products/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/logo192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/logo512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/App.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/App.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/App.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/Products.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/Home.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/reportWebVitals.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/setupTests.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,11 +110,10 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
     "git-widget-placeholder": "main",
     "junie.onboarding.icon.badge.shown": "true",
-    "last_opened_file_path": "/home/zl/klimabg",
+    "last_opened_file_path": "/home/zl/KlimaBg",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -95,6 +146,7 @@
       <updated>1763904416819</updated>
       <workItem from="1764403347481" duration="792000" />
       <workItem from="1764483149469" duration="2699000" />
+      <workItem from="1764486941616" duration="1222000" />
     </task>
     <servers />
   </component>
