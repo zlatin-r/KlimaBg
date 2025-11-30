@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d3bbf03d-821c-4f49-ac67-1597cc9ac017" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/backend/products/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/products/serializers.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/klimabg/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/klimabg/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/products/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/products/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/products/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/products/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,6 +73,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/frontend/src" />
       <recent name="$PROJECT_DIR$/backend" />
       <recent name="$PROJECT_DIR$/backend/klimabg" />
     </key>
@@ -92,7 +94,7 @@
       <updated>1763904416819</updated>
       <workItem from="1764403347481" duration="792000" />
       <workItem from="1764483149469" duration="2699000" />
-      <workItem from="1764486941616" duration="2514000" />
+      <workItem from="1764486941616" duration="3138000" />
     </task>
     <servers />
   </component>
