@@ -1,47 +1,37 @@
-import React, { useEffect, useState } from "react";
-import axios from "axios";
-import Products from "../components/Products"; // optional: if you already have a Products component
+import Products from "../components/Products";
 
-const HomePage = () => {
-    const [products, setProducts] = useState([]);
-    const [loading, setLoading] = useState(true);
-
-    useEffect(() => {
-        const fetchProducts = async () => {
-            try {
-                const response = await axios.get("http://127.0.0.1:8000/api/products/");
-                setProducts(response.data);
-            } catch (error) {
-                console.error("Error fetching products:", error);
-            } finally {
-                setLoading(false);
-            }
-        };
-
-        fetchProducts();
-    }, []);
-
-    if (loading) return <div>Loading...</div>;
-
+export default function HomePage() {
     return (
-        <div>
-            <header style={{ padding: "2rem", textAlign: "center", background: "#f5f5f5" }}>
-                <h1>Welcome to KlimaBG</h1>
-                <p>Discover our climate control products</p>
-            </header>
+        <div className="bg-gray-50 min-h-screen w-full">
+            {/* Hero Section */}
+            <section className="bg-blue-100 py-20 w-full flex flex-col lg:flex-row items-center justify-between">
+                <div className="lg:w-1/2 px-12">
+                    <h1 className="text-6xl font-bold text-blue-700 mb-6">Welcome to KlimaBg</h1>
+                    <p className="text-xl text-gray-700 mb-6">
+                        Your climate-friendly marketplace. Explore sustainable products for a better future.
+                    </p>
+                    <button className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition">
+                        Shop Now
+                    </button>
+                </div>
+                <div className="lg:w-1/2 px-12">
+                    <img
+                        src="https://via.placeholder.com/800x500.png?text=Hero+Image"
+                        alt="Hero"
+                        className="w-full h-auto rounded-lg shadow-lg"
+                    />
+                </div>
+            </section>
 
-            <section style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(250px, 1fr))", gap: "1rem", padding: "2rem" }}>
-                {products.map((product) => (
-                    <div key={product.id} style={{ border: "1px solid #ddd", padding: "1rem", borderRadius: "8px" }}>
-                        <img src={product.image} alt={product.name} style={{ width: "100%", height: "200px", objectFit: "cover" }} />
-                        <h3>{product.name}</h3>
-                        <p>{product.brand}</p>
-                        <p>Price: {product.price} EUR</p>
-                    </div>
-                ))}
+            {/* Products Section */}
+            <section className="w-full py-16 px-12">
+                <h2 className="text-4xl font-bold text-gray-800 mb-8">Featured Products</h2>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full">
+                    <Products />
+                    <Products />
+                    <Products />
+                </div>
             </section>
         </div>
     );
-};
-
-export default HomePage;
+}
