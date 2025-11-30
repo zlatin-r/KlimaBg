@@ -1,6 +1,6 @@
 import Products from "../components/Products";
 
-export default function HomePage() {
+function HomePage() {
     return (
         <div className="bg-gray-50 min-h-screen w-full">
             {/* Hero Section */}
@@ -16,7 +16,7 @@ export default function HomePage() {
                 </div>
                 <div className="lg:w-1/2 px-12">
                     <img
-                        src="https://via.placeholder.com/800x500.png?text=Hero+Image"
+                        src="http://127.0.0.1:8000/media/hero/hero-img.jpg"
                         alt="Hero"
                         className="w-full h-auto rounded-lg shadow-lg"
                     />
@@ -35,3 +35,5 @@ export default function HomePage() {
         </div>
     );
 }
+
+export default HomePage;
