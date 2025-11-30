@@ -1,10 +1,11 @@
-// ProductForm.jsx
 import { useState } from "react";
 
 export default function ProductForm({ onProductCreated }) {
-    const [name, setName] = useState("");
+    const [manufacturer, setManufacturer] = useState("");
+    const [model, setModel] = useState("");
+    const [description, setDescription] = useState("");
     const [price, setPrice] = useState("");
-    const [image, setImage] = useState("");
+    const [imageFile, setImageFile] = useState(null);
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState(null);
 
@@ -13,24 +14,29 @@ export default function ProductForm({ onProductCreated }) {
         setLoading(true);
         setError(null);
 
+        const formData = new FormData();
+        formData.append("manufacturer", manufacturer);
+        formData.append("model", model);
+        formData.append("description", description);
+        formData.append("price", price);
+        if (imageFile) formData.append("image", imageFile);
+
         try {
             const res = await fetch("http://localhost:8000/api/products/create/", {
                 method: "POST",
-                headers: {
-                    "Content-Type": "application/json",
-                },
-                body: JSON.stringify({ name, price, image }),
+                body: formData,
             });
 
             const data = await res.json();
             if (!res.ok) throw new Error(JSON.stringify(data));
 
             // Clear form
-            setName("");
+            setManufacturer("");
+            setModel("");
+            setDescription("");
             setPrice("");
-            setImage("");
+            setImageFile(null);
 
-            // Notify parent component
             if (onProductCreated) onProductCreated(data);
         } catch (err) {
             setError(err.message);
@@ -45,21 +51,38 @@ export default function ProductForm({ onProductCreated }) {
             className="max-w-md mx-auto p-6 border rounded-lg shadow space-y-4"
         >
             <h2 className="text-2xl font-bold mb-4">Add New Product</h2>
-
             {error && <p className="text-red-500">{error}</p>}
 
             <input
                 type="text"
-                placeholder="Product Name"
-                value={name}
-                onChange={(e) => setName(e.target.value)}
+                placeholder="Manufacturer"
+                value={manufacturer}
+                onChange={(e) => setManufacturer(e.target.value)}
                 className="w-full p-2 border rounded"
                 required
             />
 
             <input
                 type="text"
-                placeholder="Price (e.g., $29.99)"
+                placeholder="Model"
+                value={model}
+                onChange={(e) => setModel(e.target.value)}
+                className="w-full p-2 border rounded"
+                required
+            />
+
+            <textarea
+                placeholder="Description"
+                value={description}
+                onChange={(e) => setDescription(e.target.value)}
+                className="w-full p-2 border rounded"
+                required
+            />
+
+            <input
+                type="number"
+                step="0.01"
+                placeholder="Price (e.g., 29.99)"
                 value={price}
                 onChange={(e) => setPrice(e.target.value)}
                 className="w-full p-2 border rounded"
@@ -67,12 +90,9 @@ export default function ProductForm({ onProductCreated }) {
             />
 
             <input
-                type="text"
-                placeholder="Image URL"
-                value={image}
-                onChange={(e) => setImage(e.target.value)}
-                className="w-full p-2 border rounded"
-                required
+                type="file"
+                accept="image/*"
+                onChange={(e) => setImageFile(e.target.files[0])}
             />
 
             <button

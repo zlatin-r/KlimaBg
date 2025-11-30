@@ -20,12 +20,9 @@ class ProductList(APIView):
         serializer = ProductSerializer(products, many=True)
         return Response(serializer.data)
 
-
 class ProductCreate(APIView):
-    parser_classes = [MultiPartParser, FormParser]  # handle file uploads
-    permission_classes = [AllowAny]  # anyone can create products (dev only)
-
-    # permission_classes = [IsAdminUser]  # only admins can create products
+    parser_classes = [MultiPartParser, FormParser]
+    permission_classes = [AllowAny]  # change to IsAdminUser for production
 
     def post(self, request):
         serializer = ProductSerializer(data=request.data)
