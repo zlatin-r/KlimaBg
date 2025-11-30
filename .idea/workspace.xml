@@ -6,13 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="d3bbf03d-821c-4f49-ac67-1597cc9ac017" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Navbar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/Products.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Products.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/HomePage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/HomePage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/klimabg/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/klimabg/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/klimabg/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/klimabg/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +93,7 @@
       <updated>1763904416819</updated>
       <workItem from="1764403347481" duration="792000" />
       <workItem from="1764483149469" duration="2699000" />
-      <workItem from="1764486941616" duration="5279000" />
+      <workItem from="1764486941616" duration="5936000" />
     </task>
     <servers />
   </component>
