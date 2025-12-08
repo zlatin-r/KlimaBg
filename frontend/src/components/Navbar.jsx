@@ -7,8 +7,9 @@ export default function Navbar() {
                 <div className="flex justify-between items-center h-16">
 
                     {/* Logo */}
-                    <Link to="/" className="text-2xl font-bold text-blue-600">
-                        KlimaBg
+                    <Link to="/" className="flex items-center space-x-0">
+                        <img src="/media/logo/klima-logo.png" alt="KlimaBg" className="h-26 w-auto" />
+                        <span className="text-3xl font-bold text-blue-600">KlimaBg</span>
                     </Link>
 
                     {/* Desktop Menu */}
