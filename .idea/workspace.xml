@@ -57,7 +57,7 @@
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
     "git-widget-placeholder": "main",
     "junie.onboarding.icon.badge.shown": "true",
-    "last_opened_file_path": "/home/zl/GitRepos/Private-repo",
+    "last_opened_file_path": "/home/zl/KlimaBg",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -96,6 +96,9 @@
       <workItem from="1764486941616" duration="13538000" />
       <workItem from="1764502342061" duration="6286000" />
       <workItem from="1764561807864" duration="89000" />
+      <workItem from="1764738105717" duration="259000" />
+      <workItem from="1764822639442" duration="13000" />
+      <workItem from="1765167466717" duration="476000" />
     </task>
     <servers />
   </component>
