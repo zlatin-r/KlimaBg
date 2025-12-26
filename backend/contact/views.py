@@ -19,7 +19,7 @@ def contact_api(request):
         f"Contact Form from {name}",
         message,
         email,
-        ["support@klima.com"],
+        ["zlatinrusev@gmail.com"],
         fail_silently=False,
     )
     return Response({"success": "Message sent successfully!"}, status=status.HTTP_200_OK)
