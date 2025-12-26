@@ -28,13 +28,13 @@ export default function ProductsPage() {
         setProducts((prev) => [newProduct, ...prev]);
     };
 
-    if (loading) return <p className="p-6">Loading products...</p>;
+    if (loading) return <p className="p-6">Зареждане на продукти...</p>;
 
     return (
         <div className="p-6 space-y-8">
             <ProductForm onProductCreated={handleProductCreated} />
 
-            <h1 className="text-4xl font-bold">Products</h1>
+            <h1 className="text-4xl font-bold">Продукти</h1>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
                 {products.map((product) => (
                     <ProductCard key={product.id} product={product} />

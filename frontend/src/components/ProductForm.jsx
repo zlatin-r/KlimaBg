@@ -50,12 +50,12 @@ export default function ProductForm({ onProductCreated }) {
             onSubmit={handleSubmit}
             className="max-w-md mx-auto p-6 border rounded-lg shadow space-y-4"
         >
-            <h2 className="text-2xl font-bold mb-4">Add New Product</h2>
+            <h2 className="text-2xl font-bold mb-4">Добави нов продукт</h2>
             {error && <p className="text-red-500">{error}</p>}
 
             <input
                 type="text"
-                placeholder="Manufacturer"
+                placeholder="Производител"
                 value={manufacturer}
                 onChange={(e) => setManufacturer(e.target.value)}
                 className="w-full p-2 border rounded"
@@ -64,7 +64,7 @@ export default function ProductForm({ onProductCreated }) {
 
             <input
                 type="text"
-                placeholder="Model"
+                placeholder="Модел"
                 value={model}
                 onChange={(e) => setModel(e.target.value)}
                 className="w-full p-2 border rounded"
@@ -72,7 +72,7 @@ export default function ProductForm({ onProductCreated }) {
             />
 
             <textarea
-                placeholder="Description"
+                placeholder="Описание"
                 value={description}
                 onChange={(e) => setDescription(e.target.value)}
                 className="w-full p-2 border rounded"
@@ -82,7 +82,7 @@ export default function ProductForm({ onProductCreated }) {
             <input
                 type="number"
                 step="0.01"
-                placeholder="Price (e.g., 29.99)"
+                placeholder="Цена (напр. 29.99)"
                 value={price}
                 onChange={(e) => setPrice(e.target.value)}
                 className="w-full p-2 border rounded"
@@ -100,7 +100,7 @@ export default function ProductForm({ onProductCreated }) {
                 disabled={loading}
                 className="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 transition"
             >
-                {loading ? "Adding..." : "Add Product"}
+                {loading ? "Добавяне..." : "Добави продукт"}
             </button>
         </form>
     );

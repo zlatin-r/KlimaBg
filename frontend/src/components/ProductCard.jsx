@@ -13,13 +13,13 @@ export default function ProductCard({ product }) {
                 />
             ) : (
                 <div className="w-full h-48 bg-gray-200 flex items-center justify-center rounded-md mb-4">
-                    No Image
+                    Няма изображение
                 </div>
             )}
             <h2 className="text-xl font-semibold">{product.manufacturer} - {product.model}</h2>
             <p className="text-gray-600">{product.price}</p>
             <button className="mt-4 w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 transition">
-                Buy Now
+                Купи сега
             </button>
         </div>
     );

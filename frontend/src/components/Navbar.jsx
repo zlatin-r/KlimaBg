@@ -14,9 +14,9 @@ export default function Navbar() {
 
                     {/* Desktop Menu */}
                     <div className="hidden md:flex items-center space-x-6">
-                        <Link to="/" className="text-gray-700 hover:text-blue-600">Home</Link>
-                        <Link to="/products" className="text-gray-700 hover:text-blue-600">Products</Link>
-                        <Link to="/contact" className="text-gray-700 hover:text-blue-600">Contact</Link>
+                        <Link to="/" className="text-gray-700 hover:text-blue-600">Начало</Link>
+                        <Link to="/products" className="text-gray-700 hover:text-blue-600">Продукти</Link>
+                        <Link to="/contact" className="text-gray-700 hover:text-blue-600">Контакти</Link>
                     </div>
 
                 </div>
