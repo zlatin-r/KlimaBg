@@ -1,4 +1,5 @@
 # views.py
+from django.conf import settings
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from rest_framework import status
@@ -16,10 +17,10 @@ def contact_api(request):
 
     # send email
     send_mail(
-        f"Contact Form from {name}",
+        f"Contact Form from {name}, {email}",
         message,
         email,
-        ["zlatinrusev@gmail.com"],
+        [settings.CONTACT_EMAIL],
         fail_silently=False,
     )
     return Response({"success": "Message sent successfully!"}, status=status.HTTP_200_OK)
