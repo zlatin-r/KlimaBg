@@ -8,7 +8,8 @@ from products.views import Home
 urlpatterns = [
     path('', Home.as_view(), name="home"),
     path('admin/', admin.site.urls),
-    path('api/', include('products.urls')),
+    path('api/products/', include('products.urls')),
+    path("api/contact/", include("contact.urls")),
 ]
 
 if settings.DEBUG:
