@@ -1,4 +1,8 @@
+import environ
 from pathlib import Path
+
+env = environ.Env()
+environ.Env.read_env()  # reads .env file
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -144,6 +148,6 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_USE_TLS = True
 EMAIL_PORT = 587
-EMAIL_HOST_USER = 'zlatinrusev@gmail.com'           # replace with your email
-EMAIL_HOST_PASSWORD = 'ydly xjty ljbw vcfi'         # use an App Password, not your regular password
+EMAIL_HOST_USER = env('EMAIL_HOST_USER')
+EMAIL_HOST_PASSWORD = env('EMAIL_HOST_PASSWORD')
 DEFAULT_FROM_EMAIL = EMAIL_HOST_USER

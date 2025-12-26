@@ -5,15 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d3bbf03d-821c-4f49-ac67-1597cc9ac017" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/KlimaBg.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/KlimaBg.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/contact/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/contact/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/klimabg/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/klimabg/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/klimabg/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/klimabg/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/products/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/products/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/ContactPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/ContactPage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/HomePage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/HomePage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/backend/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
