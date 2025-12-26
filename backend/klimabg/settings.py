@@ -20,6 +20,7 @@ ALLOWED_HOSTS = []
 LOCAL_APPS = [
     "accounts",
     "products",
+    "contact",
 ]
 
 THIRD_PARTY = [
